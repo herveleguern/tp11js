@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function plus() {
+                var p = document.getElementById("box");
+                p.className = "plus";
+            }
+           
+        </script>
+        <style type="text/css">
+            .plus {font-size: 22px;color: red}
+            .normal {font-size: 16px;color: black}
+            .moins {font-size: 10px;color:green}
+            #box {width: 250px; border: 1px solid black}
+        </style>
+    </head>
+    <body>
+        <p id="box"> du texte bla bla bla bla bla bla </p>
+        <input type="button" value="Agrandir" onclick="plus();">
+        <input type="button" value="Normal" onclick="normal();">
+        <input type="button" value="Retrecir" onclick="moins();">
+    </body>
+</html>

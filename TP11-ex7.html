@@ -1,0 +1,18 @@
+<head>
+    <script type="text/javascript">
+        function changeImage(image) {
+            document.getElementById("photo").src=image;
+        }
+    </script>
+</head> 
+<body>
+    <p>
+        <img src="penguins.jpg" alt="penguins"
+             onmouseover="changeImage('penguins.jpg');"/>
+        <img src="koala.jpg" alt="koala"
+             onmouseover="changeImage('koala.jpg');"/>
+    </p>
+    <p>
+        <img id="photo" alt="image choisie" src="koala.jpg"/>
+    </p> 
+</body>

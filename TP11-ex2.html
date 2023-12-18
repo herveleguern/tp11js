@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script type="text/javascript">
+        function ajouterItem(){
+            var texte=document.createTextNode('Nouvel item');
+            var li=document.createElement("li");
+            li.appendChild(texte);
+            document.getElementById("liste").appendChild(li);
+        }
+        function supprimerItem() {
+            //to do
+        }
+        
+    </script>
+</head>
+<body>
+<ul id="liste">
+<li>Pommes</li>
+<li>Oranges</li>
+<li>Fraises</li>
+</ul>
+    <input type="button" value="Ajouter" onclick="javascript:ajouterItem();">
+    <input type="button" value="Supprimer" onclick="javascript:supprimerItem();">
+</body>
+</html>

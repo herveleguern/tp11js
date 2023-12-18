@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function afficheAttributs() {
+                var image = document.getElementById("img");
+                msg="";
+                for (var i=0;i<image.attributes.length;i++){
+                    msg=msg+"\n"+image.attributes[i].name+":"+image.attributes[i].value;
+                }
+                alert(msg);  
+            }
+        </script>
+    </head>
+
+    <body>
+        <p>
+            <img id="img" src="koala.jpg" width="200" height="150" alt="c'est un koala">
+        </p>
+        <form>
+            <input type="button" value="Voir les attributs" onclick="afficheAttributs();">
+        </form>
+
+    </body>
+</html>

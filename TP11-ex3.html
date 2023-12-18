@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script type="text/javascript">
+        function ajouter(entree) {
+            var ligne = document.createElement('tr');
+            var cellule = document.createElement('td');
+            var texte = document.createTextNode(entree);
+            cellule.appendChild(texte);
+            ligne.appendChild(cellule);
+            document.getElementById('tbody').appendChild(ligne);
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        Nom:<input type="text" name="entree" size="20">
+        <input type="button" value="Ajouter" onclick="ajouter(entree.value);">
+        <input type="button" value="Supprimer" onclick="supprimer();">
+    </form>
+    <table border="1">
+        <thead>Liste des noms</thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <!-- Ajouter une légende à un tableau -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function afficherLaLegende() {
+                var caption=document.createElement("caption");
+                var legende=document.createTextNode('Ceci est un tableau');
+                caption.appendChild(legende);
+                //document.getElementById("tableau").appendChild(caption);
+                var tableau=document.getElementById("tableau");
+                tableau.insertBefore(caption,tableau.firstElementChild);
+            }
+            
+        </script>
+    </head>
+    <body>
+        <table id="tableau" width="200" border="1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+        <input type="button" value="Afficher la légende" onclick="afficherLaLegende();">
+    </body>
+</html>
